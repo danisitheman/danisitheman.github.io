@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <style>
+        body {
+            margin: auto;
+            background-image: url('images/pepe.jpg');
+            background-size: cover;
+            /* 40px wide, 60px high */
+            background-color: transparent;
+            opacity: 1;
+            background-position: center center;
+            /* 8px 8px;  */
+            /* Image starts 8px from left and 8px from top of element */
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            /* repeat-x; */
+            /* Repeat background image only horizontally */
+            background-attachment: fixed;
+            opacity: 0.8;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 10 0 0 15;
+            padding: 0px 0 0 0;
+            border: 2px solid rgb(95, 209, 28);
+            overflow: hidden;
+            width: 38%;
+            background-color: transparent;
+
+
+        }
+
+        li {
+            float: left;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 120%;
+            color: rgb(29, 80, 5);
+        }
+
+        li a.active {
+            background-color: rgb(117, 243, 128);
+            color: rgb(8, 105, 81);
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(55, 150, 179);
+            color: rgb(209, 238, 44);
+            /* apply a hover effect on an a element, but not to an a element with the class active */
+        }
+
+        footer {
+            display: block;
+            position: absolute;
+            left: 1%;
+            top: 90%;
+            margin: 0 auto 0 auto;
+            text-align: center;
+            color: rgb(250, 248, 250);
+            font-size: 120%;
+        }
+
+        div a:link {
+            color: rgba(143, 241, 63, 0.842);
+        }
+
+        .right {
+            position: absolute;
+            right: 10%;
+            top: 70%;
+            border: 0px solid #73AD21;
+            padding: 10px;
+            overflow: auto;
+            color: rgb(216, 168, 10);
+        }
+
+        .img {
+            float: right;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <header>
+        <ul>
+            <li><a class="active" href="blog.html" target="_self">Blog</a></li>
+            <li><a href="projects.html" target="_top">Projects</a></li>
+            <li><a href="contact.html" target="_top">Contact</a></li>
+            <li><a href="about.html" target="_top">About Me</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="right">
+
+
+            <figure>
+                <!--img class="img" src="c:/Users/jambon/Pictures/Saved Pictures/large_baby-panda.png"  width="100" height="100"  title="My Panda" alt="My Picture"/-->
+
+                <a href="mailto: someone@example.com"> <img class="img" src="images/pigeon-42590_960_720.png" width="100"
+                        height="110" /></a>
+                <!-- <figcaption>A wonderful hat</figcaption> -->
+            </figure>
+            <p>
+                Use your imagination, Write something.
+            </p>
+            <p class="email">
+
+                Contact me: <br> <a href="mailto: someone@example.com" target="_top"> </a>
+
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <p></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>
+            <small>
+
+            </small>
+        </p>
+    </footer>
+
+</body>
+
+</html>

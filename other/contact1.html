@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <style>
+                    input[type="checkbox"]:checked {
+                      /*  background-color: #000;
+                        border-left-color: #06F;
+                        border-right-color: #06F; */
+                    }
+                </style>
+        </head>
+<body>
+        <form method="post" action="/registration/new" id="registration-form">
+
+            <label for="first-name">First name:</label>
+            <br />
+            <input type="text" id="first-name" name="FirstName" />
+            <br />
+            <label for="last-name">Last name:</label>
+            <br />
+            <input type="text" id="last-name" name="LastName" />
+            <br />
+            <label for="email-address">Email address:</label>
+            <br />
+            <input type="email" id="email-address" name="EmailAddress" />
+            <br />
+            <label for="password">Choose a password:</label>
+            <br />
+            <input type="password" id="password" name="Password" />
+            <br />
+            <label for="confirm-password">Confirm your password:</label>
+            <br />
+            <input type="password" id="confirm-password" name="ConfirmPassword" />
+            <br />
+            <label for="website">Website/blog:</label>
+            <br />
+            <input type="url" id="website" name="WebsiteUrl" value="www.google.ca" />
+            <br />
+            <button type="submit">Register</button>
+            <br />
+            <button type="file">Attach a file</button>
+            <br />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <br />
+    
+            <input type="checkbox" name="vehicle1" value="Bike" checked="checked">I have a bike
+            <br />
+            <input type="checkbox" name="vehicle2" value="Car">I have a car
+            <br />
+            <hr />
+            <input type="submit">
+    
+    
+    
+        </form>
+    
+</body>
+</html>
